@@ -1,0 +1,8 @@
+[
+  { "url": "/images/guitar.jpg", "title": "Guitar", "alt": "gitara" },
+  { "url": "/images/img.jpg", "title": "Drums", "alt": "drums" },
+  { "url": "/images/piano.jpg", "title": "Piano", "alt": "piano" },
+  { "url": "/images/sing.jpg", "title": "Singer", "alt": "singer" },
+  { "url": "/images/music.jpg", "title": "Music sheet", "alt": "music sheet" },
+    { "url": "/images/radio.jpg", "title": "Radio", "alt": "radio" }
+]

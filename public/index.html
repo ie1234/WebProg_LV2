@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+	<html lang="hr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--dodati meta tag bitan za stranicu-->
+		<!--dodati link za css dokumente -->
+		<link rel="stylesheet" href="/style/style.css">
+		<title>Music Info</title>
+	</head>
+	<body>
+		<header>
+		<h1>Music Info</h1>
+		</header>
+		<!-- <header>
+       <nav aria-labelledby="primarna-navigacija">
+        <h2 id="primarna-navigacija">Primarna navigacija</h2>
+        
+        </nav>
+        </header>
+    -->
+		<nav class="nav-menu">
+			<input type="checkbox" id="menu-toggle">
+			<label for="menu-toggle" class="menu-icon" aria-label="Toggle menu">☰</label>
+			 <!-- dodati obilježja za ARIA-->
+			<ul class="menu">
+				<li><a href="/">Home</a></li>
+				<li><a href="/chart.html">Chart</a></li>
+				<li><a href="/slike">Gallery</a></li>
+			</ul>
+		</nav>
+
+
+		<h1>Music Info</h1>
+		<div class="Img-and-Table">
+			<table class="musicTab">
+				<tr>
+					<th>Track ID</th>
+					<th>Name</th>
+					<th>Artist</th>
+					<th>Genre</th>
+					<th>Year</th>
+					<th>Duration (ms)</th>
+					<th>Energy</th>
+				</tr>
+				<tr><td>TRIOREW128F424EAF0</td><td>Mr. Brightside</td><td>The Killers</td><td>Rock</td><td>2004</td><td>222200</td><td>0.918</td></tr>
+				<tr><td>TRRIVDJ128F429B0E8</td><td>Wonderwall</td><td>Oasis</td><td>Rock</td><td>2006</td><td>258613</td><td>0.892</td></tr>
+				<tr><td>TROUVHL128F426C441</td><td>Come as You Are</td><td>Nirvana</td><td>Rock</td><td>1991</td><td>218920</td><td>0.826</td></tr>
+				<tr><td>TRVCCWR128F9304A30</td><td>Viva la Vida</td><td>Coldplay</td><td>Rock, Pop</td><td>2013</td><td>235384</td><td>0.806</td></tr>
+				<tr><td>TRUENYK128F4274057</td><td>Chop Suey!</td><td>System of a Down</td><td>Metal</td><td>2008</td><td>232680</td><td>0.925</td></tr>
+				<tr><td>TROCLWN128F92EB284</td><td>Fluorescent Adolescent</td><td>Arctic Monkeys</td><td>Pop</td><td>2007</td><td>177534</td><td>0.818</td></tr>
+			</table>
+			<aside class="imageHomePage">
+				<!--<img src="https://cdn.pixabay.com/photo/2022/07/10/01/47/grades-7312021_1280.jpg" alt="Music sheet" class="desktop-img">
+				<img src="https://cdn.pixabay.com/photo/2023/02/07/21/25/violin-7775182_1280.jpg" alt="Violin and music sheet" class="mobile-img">-->
+
+				<picture>
+					<source media="(max-width: 768px)" srcset="https://cdn.pixabay.com/photo/2023/02/07/21/25/violin-7775182_1280.jpg">
+					<img src="https://cdn.pixabay.com/photo/2022/07/10/01/47/grades-7312021_1280.jpg" alt="Music sheet">
+				</picture>
+
+			</aside>
+		</div>
+
+		<section class="content"> <!-- dodati neke od obilježja za ARIA-->
+			<h2>Music info</h2>
+			<p>Table shows a few of the most popular songs and their characteristics.</p>
+		</section>
+		 <!-- dodati jedan aside na desnoj strani s ugrađenom google mapom/filmom ili slično-->
+		<article>
+			<h2>News</h2>
+			<p>Artists like The Killers, Arctic Monkeys and Coldplay continue to influence modern rock and pop genres.</p>
+		</article>
+		
+
+		<!--dodati odgovarajuće elemente na temelju danog zadatka: tablice, slike, tekst
+		Nepotrebno obrisati! -->
+		<footer>
+		<p>&copy; 2026. Web Programiranje. Sva prava pridrzana.</p>
+		</footer>
+	</body>
+	</html>

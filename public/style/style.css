@@ -1,0 +1,314 @@
+/* Opći stilovi */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Header i navigacija */
+header {
+    background: #222;
+    color: white;
+    padding: 20px;
+}
+
+/*MENI*/
+#menu-toggle{
+    display: none;
+}
+.menu-icon{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.menu a:hover{
+    color:#555353;
+}
+
+.Img-and-Table{
+    display: flex;
+    /*flex-direction: row;*/
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.imageHomePage{
+    flex: 1;
+    margin-left: 50px;
+    text-align: center;
+}
+.imageHomePage img{
+    height: auto;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+.imageHomePage:hover{
+    transform: scale(0.9);
+}
+
+.musicTab table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+.musicTab th, td{
+    padding: 10px;
+}
+.musicTab{
+    flex: 2;
+    border-collapse: collapse;
+    overflow-x: auto;
+    width: 100%;
+    display: table;
+}
+
+.desktop-img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.mobile-img{
+    display: none;
+}
+
+/* Sekcije */
+.content {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox za podatke */
+.data-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Kružni grafikon - CSS samo */
+:root {
+    --bg-chart: #ffffff;
+    --color-rock: #3498db;  /* Plava */
+    --color-pop: #2ecc71;   /* Zelena */
+    --color-metal: #e74c3c; /* Crvena */
+    --chart-size: 300px;
+    --transition-speed: 0.5s;
+}
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+.pie-chart-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 30px 0;
+}
+.pie-chart {
+    width: var(--chart-size);
+    height: var(--chart-size);
+    border-radius: 50%;
+    
+    background: conic-gradient(
+        var(--color-rock) 0% var(--rock),
+        var(--color-pop) var(--rock) calc(var(--rock) + var(--pop)),
+        var(--color-metal) calc(var(--rock) + var(--pop)) 100%
+    );
+    
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    animation: fadeInScale 1.2s ease-out forwards;
+    transition: transform var(--transition-speed);
+}
+.chart-label {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    color: #333;
+}
+
+.legend {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+}
+
+.rock { background-color: var(--color-rock); }
+.pop { background-color: var(--color-pop); }
+.metal { background-color: var(--color-metal); }
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.5) rotate(-30deg);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+/* Flexbox analiza sekcija */
+.analysis-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap; /* wrap */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.analysis-box {
+    background: #e3e3e3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+/* Flexbox za kontakt formu */
+.form-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+input, button {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background: #222;
+    color: white;
+}
+
+/* Responzivnost */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #222;
+        text-align: center;
+    }
+
+    .menu li {
+        padding: 10px 0;
+    }
+
+    .menu a {
+        color: white;
+    }
+
+    /* ključ */
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: flex;
+    }
+
+    .data-container, .analysis-box, .nav-menu, .Img-and-Table {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-flex input, .form-flex button {
+        width: 100%;
+    }
+
+    .Img-and-Table{
+        gap: 20px;
+    }
+    .musicTab{
+        min-width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+    .imageHomePage img{
+        max-width: 400px;
+    }
+    .desktop-img{
+        display: none;
+    }
+    .mobile-img{
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .pie-chart-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    :root {
+        --chart-size: 200px;
+    }
+}
